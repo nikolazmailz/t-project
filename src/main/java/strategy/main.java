@@ -6,5 +6,5 @@ public class main {
         Ping ping = new Ping();
         ping.sayHello();
     }
-
+ 
 }
