@@ -1,9 +1,13 @@
 package strategy;
 
+import strategy.example.Behavior.impl.FlyNoWay;
+import strategy.example.Behavior.impl.FlyWithWay;
+import strategy.example.Behavior.impl.QuackDuck;
 import strategy.example.Behavior.impl.QuackMute;
 import strategy.example.Duck;
 import strategy.example.dto.DuckReal;
 import strategy.example.dto.DuckRubber;
+import strategy.example.dto.DuckWithoutQuack;
 import strategy.example.dto.WoodenDuck;
 
 public class main {
@@ -16,12 +20,19 @@ public class main {
         DuckRubber duckRubber = new DuckRubber();
         WoodenDuck woodenDuck = new WoodenDuck();
 
-        duckReal.display();
-        duckReal.performFly();
-        duckReal.performQuack();
-        duckReal.setQuackBehavior(new QuackMute());
-        duckReal.display();
-        duckReal.performQuack();
+        DuckWithoutQuack duckWithoutQuack = new DuckWithoutQuack();
+        duckWithoutQuack.display();
+        QuackDuck quackDuck = new QuackDuck();
+        duckWithoutQuack.setQuackBehavior(quackDuck);
+        duckWithoutQuack.performQuack();
+
+
+//        duckReal.display();
+//        duckReal.performFly();
+//        duckReal.performQuack();
+//        duckReal.setQuackBehavior(new QuackMute());
+//        duckReal.display();
+//        duckReal.performQuack();
 
 
     }
