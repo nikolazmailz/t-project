@@ -20,7 +20,7 @@ public class DuckSimulator {
 
         //TODO add in decorator with factory
         System.out.println(" ");
-        System.out.println("TODO add in decorator with factory");
+        System.out.println("TODO add in decorator with new AbstractFactory()");
         System.out.println(" ");
         AbstractDuckFactory duckFactory = new CountingDuckFactory();
         simulator.simulate(duckFactory);
@@ -41,7 +41,7 @@ public class DuckSimulator {
         simulate(rubberDuck);
         simulate(goose);
 
-        System.out.println("Decorator run\nquack is: " + QuackCounter.getQuacks());
+        System.out.println("Decorator run... quack is: " + QuackCounter.getQuacks());
 
         System.out.println("\nComposite run\n");
 
@@ -53,6 +53,7 @@ public class DuckSimulator {
         composite.add(rubberDuck);
         composite.add(goose);
         simulate(composite);
+        System.out.println("Decorator run... quack is: " + QuackCounter.getQuacks());
 
         System.out.println("###compositeOneShape###");
         Flock compositeOneShape = new Flock();
@@ -61,6 +62,7 @@ public class DuckSimulator {
         compositeOneShape.add(duckFactory.createMallardDuck());
         compositeOneShape.add(duckFactory.createMallardDuck());
         simulate(compositeOneShape);
+        System.out.println("Decorator run... quack is: " + QuackCounter.getQuacks());
 
     }
 
