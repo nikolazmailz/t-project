@@ -1,4 +1,6 @@
+import jdk.nashorn.internal.runtime.ScriptRuntime.apply
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
+import java.util.regex.Pattern.compile
 
 group = "t-project"
 version = "1.0-SNAPSHOT"

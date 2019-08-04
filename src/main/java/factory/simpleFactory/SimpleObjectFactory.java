@@ -1,5 +1,8 @@
 package factory.simpleFactory;
 
+import factory.simpleFactory.type.FakeOtherTypes;
+import factory.simpleFactory.type.FakeTypeOne;
+
 public class SimpleObjectFactory {
 
     public FakeObject createFakeObject(String type){

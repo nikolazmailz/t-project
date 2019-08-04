@@ -1,4 +1,6 @@
-package factory.simpleFactory;
+package factory.simpleFactory.type;
+
+import factory.simpleFactory.FakeObject;
 
 public class FakeOtherTypes implements FakeObject {
     String name = "TWO WIM";

@@ -13,21 +13,25 @@ import strategy.example.dto.WoodenDuck;
 public class main {
 
     public static void main(String args[]){
+
+
         Ping ping = new Ping();
         ping.sayHello();
 
         Duck duckReal = new DuckReal();
-        DuckRubber duckRubber = new DuckRubber();
-        WoodenDuck woodenDuck = new WoodenDuck();
+        Duck duckRubber = new DuckRubber();
+        Duck woodenDuck = new WoodenDuck();
 
-        DuckWithoutQuack duckWithoutQuack = new DuckWithoutQuack();
-        duckWithoutQuack.display();
-        QuackDuck quackDuck = new QuackDuck();
-        duckWithoutQuack.setQuackBehavior(quackDuck);
-        duckWithoutQuack.performQuack();
-
-
+//        DuckWithoutQuack duckWithoutQuack = new DuckWithoutQuack();
+//        duckWithoutQuack.display();
+//        QuackDuck quackDuck = new QuackDuck();
+//        duckWithoutQuack.setQuackBehavior(quackDuck);
+//        duckWithoutQuack.performQuack();
+//
+//
 //        duckReal.display();
+        duckRubber.swim();
+        duckRubber.display();
 //        duckReal.performFly();
 //        duckReal.performQuack();
 //        duckReal.setQuackBehavior(new QuackMute());

@@ -6,8 +6,11 @@ public class Client {
 
         System.out.println("Game Enter");
 
-        SimpleObjectFactory simpleObectFactory = SimpleObectFactory();
-        SimpleAPI simpleAPI = new SimpleAPI();
+        SimpleObjectFactory simpleObectFactory = new SimpleObjectFactory();
+        SimpleObjectAPI simpleAPI = new SimpleObjectAPI(simpleObectFactory);
+
+        simpleObectFactory.createFakeObject("FakeTypeOne");
+
 
 
 

@@ -1,10 +1,10 @@
 package factory.simpleFactory;
 
-public class SimpleAPI {
+public class SimpleObjectAPI {
 
     SimpleObjectFactory factory;
 
-    public SimpleAPI(SimpleObjectFactory factory){
+    public SimpleObjectAPI(SimpleObjectFactory factory){
         this.factory = factory;
     }
 
